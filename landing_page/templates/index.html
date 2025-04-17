@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landing Page con Formulario</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Mi Landing Page</h1>
+    <nav>
+      <a href="#presentacion">Inicio</a>
+      <a href="#formulario">Contacto</a>
+    </nav>
+    <button id="toggleDarkMode">🌙</button>
+  </header>
+
+  <section id="presentacion" class="fade-in">
+    <h2>Bienvenido</h2>
+    <p>Pagina de ejemplo para un Landing Page</p>
+    <img class="logo-witch" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Witch_Watch_Anime_Logo.svg/2560px-Witch_Watch_Anime_Logo.svg.png" alt="Logo Witch Watch">
+
+  </section>
+
+  <section id="formulario" class="fade-in">
+    <h2>Contáctanos</h2>
+    <form id="contactForm" novalidate>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" maxlength="50">
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com">
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje..." maxlength="300"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <p id="successMsg"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Taller de Desarrollo Web</p>
+  </footer>
+
+  <script src="/assets/js/script.js"></script>
+</body>
+</html>
